@@ -1,0 +1,114 @@
+html, body {
+  height: 100%;
+  box-shadow: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-custom {
+  background: linear-gradient(#40cfdb, #4082DB);
+}
+
+.nav-link:hover {
+  font-family: calibri, sans-serif, arial;
+  font-weight: bold;
+  font-size: 1.05em;
+}
+
+.error {
+    color: #8B0000;
+}
+
+.table {
+  margin: 2%;
+  table-layout: fixed;
+  width: 95% !important;
+}
+
+.thumbnail {
+  border: none;
+  max-height: 80px;
+  max-width: 80px;
+  padding: 5px;
+}
+
+.title0{
+  font-family: calibri, sans-serif, arial;
+  font-weight: bold;
+  color: #B4C50;
+  font-size: 1.5em;
+}
+
+.title0:hover {
+  color: #2a4f92;
+  font-size: 1.55em;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#40CFDB, #4082DB,#40DB99, #40CFDB);
+  /*background-repeat: no-repeat; */
+}
+
+.main_dog {
+  width: 35vmax;
+  height: 30.5vmax;
+  position: relative;
+}
+
+.dog-image {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.login {
+  padding-top: 8%;
+}
+
+.doggy {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5%;
+}
+
+img {
+  max-width:90%;
+  max-height:50%;
+  border: 15px solid black;
+  display:flex;
+  object-fit: contain;
+}
+
+ p {
+  margin-bottom: 0px !important;
+ }
+
+.dog_name {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1%;
+  padding-top:0px;
+  color: #B4C50;
+  float: left;
+}
+
+.save-button {
+  display: flex;
+  position: relative;
+  padding: 2%;
+  padding-left: 0%;
+  text-align: left;
+}
+
+.smaller {
+  font-size: .7em;
+  }
