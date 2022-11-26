@@ -1,0 +1,18 @@
+{% extends "layout_with_dog.html" %}
+
+{% block title %}
+    One Pup Comin' Up!
+{% endblock %}
+info = {{info}}
+{% block main%}
+<form action="/get_dog" method="get">
+    {% if error %}
+    <h5 class="error"> {{error}} </h5>
+    {% endif %}
+    <h4>One Pup Comin' Up!</h4>
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="zip" name="zip" placeholder="Zipcode" type="text">
+    </div>
+    <button class="btn btn-primary" type="submit">Find</button>
+</form>
+{% endblock %}
