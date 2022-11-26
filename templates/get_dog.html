@@ -1,0 +1,36 @@
+
+{% extends "layout_with_dog.html" %}
+
+{% block title %}
+    {{info.name}}
+{% endblock %}
+
+{% block main3 %}
+    Meet {{info.name}}! <p class="smaller">Located in {{info.location}}</p>
+{% endblock %}
+
+{% block main %}
+<img src="{{info.photo}}">
+{% endblock %}
+
+{% block save %}
+    <form class="save-button" action="/saved" method="post">
+        <input type="text" hidden name="name" value="{{info.name}}"></input>
+        <input type="text" hidden name="breed" value="{{info.breed}}"></input>
+        <input type="text" hidden name="photo" value="{{info.photo}}"></input>
+        <input type="text" hidden name="url" value="{{info.url}}"></input>
+        <input type="text" hidden name="age" value="{{info.age}}"></input>
+        <button class="btn btn-primary" id="save" name="save">Save</button>
+    </form>
+    <form class="save-button" action="{{info.url}}" target="_blank" method="get">
+        <button class="btn btn-primary" id="bio" name="bio">Bio</button>
+    </form>
+{% endblock %}
+
+
+{% block thought %}
+    {{thought}}
+{% endblock %}
+
+
+
