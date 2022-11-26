@@ -8,7 +8,7 @@ This project for CS50 was built with Flask, python, JavaScript, CSS, HTML is dep
 The dog and thought bubble were borrowed from open source and are credited in the CSS file "dog.css".
 The idea of this web app (eventually should be a mobile app) is to get a quick fix on an adoptable dog, and potentially save the profile for later. Users can use the site without registering but must register if they want to save any dogs. 
 
-This app uses the free PetFinder API for the database. It was challenging because of the need to include headers and token in the request, and the token expires every hour!
+This app uses the free PetFinder API for the database. It was challenging because of the need to include headers and token in the request, and the token expires every hour! To hide the API key and secret, I used a virtual environment variable that was configured especially for python anywhere. Deploying somewhere else will require your own API credentials and some reconfiguration of hiding the secrets. 
 
 The CSS dog, only when on the dog profile screen, will make comments about the pups, personalized with the dog's name. He says 4-5 different phrases. I also implemented a "how many times this dog was saved" feature so people know which dog is popular. 
 
