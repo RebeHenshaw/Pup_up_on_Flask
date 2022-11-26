@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+My Saved Pups
+{% endblock %}
+
+{% block dog %}
+<main>
+    <!-- put in a table that looks nice, pic, name, age, breed url, date saved
+    # include an unsave button
+    # put a credit for the CSS animations : dog and bubble -->
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Picture</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Breed</th>
+            <th scope="col">Link</th>
+            <th scope="col">Saves</th>
+            <th scope="col">Forget</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for each in saved %}
+          <tr>
+            <td><img class="thumbnail" src="{{each['image_url']}}"></td>
+            <td>{{each['name']}}</td>
+            <td>{{each['age']}}</td>
+            <td>{{each['breed']}}</td>
+            <td><a href="{{each['url']}}" target="_blank">Full Bio</a></td>
+            <td>{{each['saves']}}</td>
+            <td>
+              <form id="delete" action="/delete" method="post">
+                <input hidden name="id" value="{{each['id']}}"></input>
+                <button class="btn btn-primary" type="submit">Forget {{each['name']}}</button>
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+</main>
+{% endblock %}
