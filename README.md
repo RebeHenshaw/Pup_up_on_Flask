@@ -1,9 +1,10 @@
 # Pup_up_on_Flask
 #### Video Demo:  https://drive.google.com/file/d/1PhssEv2-yn4_TeC7qso7FSxHhJfkAGph/view
+### App: http://rlhenshaw.pythonanywhere.com/
 #### Description:
 Tinder for adopting dogs; emphasizes location and photos; deployed with Flask on Python Anywhere
 
-This project for CS50 was built with Flask, python, JavaScript, CSS, HTML is employed on Python Anywhere at: http://rlhenshaw.pythonanywhere.com/
+This project for CS50 was built with Flask, python, JavaScript, CSS, HTML is deployed on Python Anywhere at: http://rlhenshaw.pythonanywhere.com/
 The dog and thought bubble were borrowed from open source and are credited in the CSS file "dog.css".
 The idea of this web app (eventually should be a mobile app) is to get a quick fix on an adoptable dog, and potentially save the profile for later. Users can use the site without registering but must register if they want to save any dogs. 
 
